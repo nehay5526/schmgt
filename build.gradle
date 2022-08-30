@@ -68,15 +68,15 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-tasks.named('asciidoctor') {
-    inputs.dir snippetsDir
-    dependsOn test
-}
+//tasks.named('asciidoctor') {
+//    inputs.dir snippetsDir
+//    dependsOn test
+//}
 
-tasks.named('bootBuildImage') {
-    builder = 'paketobuildpacks/builder:tiny'
-    environment = ['BP_NATIVE_IMAGE': 'true']
-}
+//tasks.named('bootBuildImage') {
+//    builder = 'paketobuildpacks/builder:tiny'
+//    environment = ['BP_NATIVE_IMAGE': 'true']
+//}
 
 //tasks.named('hibernate') {
 //    enhance {
